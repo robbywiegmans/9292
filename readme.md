@@ -6,6 +6,7 @@ Author: Robby Wiegmans
 ---
 
 Prerequisites:
+- Download 9292 app from https://m.apkpure.com/nl/9292-public-transport-ticket/nl.negentwee
 
 - Install NodeJS and NPM:
   https://nodejs.org/en
