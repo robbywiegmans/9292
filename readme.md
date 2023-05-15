@@ -96,22 +96,22 @@ await expect(HomePage.btnMenu).toBeExisting();
 To find the name of an element you want to interact with, use Appium Inspector
 For more information: https://github.com/appium/appium-inspector
 
-ACCESSIBILTITY ID'S
+### ACCESSIBILTITY ID'S
 
 For example:
 $("~close")
 
-RESOURCE-ID
+### RESOURCE-ID
 
 For example:
 $('android=new UiSelector().resourceId("nl.negentwee.features:id/home_save_button")')
 
-XPATH
+### XPATH
 
 For example:
 $("//android.widget.Button[@text='Full functionality']")
 
-ACTIONS
+### ACTIONS
 
 To interact with an element, use the actions given by WebDriver.io
 For more information: https://webdriver.io/docs/api/element/
@@ -123,7 +123,7 @@ For example:
 await PlannerPage.btnDone.click();
 await this.btnPlannerFrom.setValue("Amsterdam");
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- VALIDATIONS _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+### VALIDATIONS
 
 .toBeExisting()
 .not.toBeExisting()
@@ -134,7 +134,7 @@ For example:
 
 await expect(this.titleSettings).toBeExisting();
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- COMBI MULTIPLE ACTIONS*-*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+### COMBI MULTIPLE ACTIONS
 
 For example
 async returnToHome() {
