@@ -1,11 +1,12 @@
-Project: 9292
+# Project: 9292
+
 Frameworks: WebdriverIO + Appium + Mocha + Allure report
 Design pattern: Page Object Model
 Author: Robby Wiegmans
 
 ---
 
-Prerequisites:
+## Prerequisites:
 
 - Install NodeJS and NPM:
   https://nodejs.org/en
@@ -31,9 +32,9 @@ Prerequisites:
 
   > npm i
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- RUNNING TESTS _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+## RUNNING TESTS
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- STANDARD TEST _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+### STANDARD TEST
 
 Prerequisites:
 
@@ -50,13 +51,13 @@ To run a single test:
 
 - set it("should something") to it.only("should something")
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- GENERATE TEST REPORTS _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+### GENERATE TEST REPORTS
 
 > npm run report
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- WRTING TESTS _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+## WRTING TESTS
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- PAGE OBJECT MODEL _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+### PAGE OBJECT MODEL
 
 1. Create or use existing \*.page.js in test/pageobjects folder
 2. Use get and return:
@@ -73,7 +74,7 @@ return $("~close");
 
 5. Then return the selector
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- E2E TEST _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+### E2E TEST
 
 For example:
 In the describe(), state the name of page, e.g., 'Onboarding'
@@ -90,7 +91,7 @@ await expect(HomePage.btnMenu).toBeExisting();
 });
 });
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- FINDING ELEMENTS _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+### FINDING ELEMENTS
 
 To find the name of an element you want to interact with, use Appium Inspector
 For more information: https://github.com/appium/appium-inspector
@@ -110,7 +111,7 @@ XPATH
 For example:
 $("//android.widget.Button[@text='Full functionality']")
 
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- ACTIONS _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+ACTIONS
 
 To interact with an element, use the actions given by WebDriver.io
 For more information: https://webdriver.io/docs/api/element/
